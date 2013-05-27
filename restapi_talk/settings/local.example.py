@@ -58,6 +58,4 @@ STATICFILES_DIRS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ''  # Use `./manage.py generate_secret_key` to get a unique key
-print MEDIA_ROOT
-print STATIC_ROOT
+SECRET_KEY = '0w(1$2)iyi*!8bjh1t1%s*uj-759)kw#a=e_t_rudc#(y28-zn'  # Use `./manage.py generate_secret_key` to get a unique key

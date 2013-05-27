@@ -1,0 +1,954 @@
+[
+{
+  "pk": 1,
+  "model": "fundtracking.fundhouse",
+  "fields": {
+    "name": "Public Mutual"
+  }
+},
+{
+  "pk": 1,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "PSMALLCAP",
+    "name": "Public Smallcap Fund",
+    "fund_house": 1
+  }
+},
+{
+  "pk": 2,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "PAIF",
+    "name": "Public Asia Ittikal Fund",
+    "fund_house": 1
+  }
+},
+{
+  "pk": 3,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "PSBF",
+    "name": "Public Select Bond Fund",
+    "fund_house": 1
+  }
+},
+{
+  "pk": 4,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "PITTIKAL",
+    "name": "Public Ittikal Fund",
+    "fund_house": 1
+  }
+},
+{
+  "pk": 5,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "PIX",
+    "name": "Public Index Fund",
+    "fund_house": 1
+  }
+},
+{
+  "pk": 1,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-23",
+    "fund": 1,
+    "nav": "0.8643"
+  }
+},
+{
+  "pk": 2,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-22",
+    "fund": 1,
+    "nav": "0.8769"
+  }
+},
+{
+  "pk": 3,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-21",
+    "fund": 1,
+    "nav": "0.8812"
+  }
+},
+{
+  "pk": 4,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-20",
+    "fund": 1,
+    "nav": "0.8738"
+  }
+},
+{
+  "pk": 5,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-17",
+    "fund": 1,
+    "nav": "0.8605"
+  }
+},
+{
+  "pk": 6,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-16",
+    "fund": 1,
+    "nav": "0.8519"
+  }
+},
+{
+  "pk": 7,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-15",
+    "fund": 1,
+    "nav": "0.8536"
+  }
+},
+{
+  "pk": 8,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-14",
+    "fund": 1,
+    "nav": "0.8484"
+  }
+},
+{
+  "pk": 9,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-13",
+    "fund": 1,
+    "nav": "0.8504"
+  }
+},
+{
+  "pk": 10,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-10",
+    "fund": 1,
+    "nav": "0.8377"
+  }
+},
+{
+  "pk": 11,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-09",
+    "fund": 1,
+    "nav": "0.8286"
+  }
+},
+{
+  "pk": 12,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-08",
+    "fund": 1,
+    "nav": "0.8186"
+  }
+},
+{
+  "pk": 13,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-07",
+    "fund": 1,
+    "nav": "0.8171"
+  }
+},
+{
+  "pk": 14,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-06",
+    "fund": 1,
+    "nav": "0.8007"
+  }
+},
+{
+  "pk": 15,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-03",
+    "fund": 1,
+    "nav": "0.7775"
+  }
+},
+{
+  "pk": 16,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-02",
+    "fund": 1,
+    "nav": "0.7815"
+  }
+},
+{
+  "pk": 17,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-30",
+    "fund": 1,
+    "nav": "0.7847"
+  }
+},
+{
+  "pk": 18,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-29",
+    "fund": 1,
+    "nav": "0.7845"
+  }
+},
+{
+  "pk": 19,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-26",
+    "fund": 1,
+    "nav": "0.7933"
+  }
+},
+{
+  "pk": 20,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-25",
+    "fund": 1,
+    "nav": "0.7943"
+  }
+},
+{
+  "pk": 21,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-23",
+    "fund": 2,
+    "nav": "0.2642"
+  }
+},
+{
+  "pk": 22,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-22",
+    "fund": 2,
+    "nav": "0.2685"
+  }
+},
+{
+  "pk": 23,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-21",
+    "fund": 2,
+    "nav": "0.2687"
+  }
+},
+{
+  "pk": 24,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-20",
+    "fund": 2,
+    "nav": "0.2682"
+  }
+},
+{
+  "pk": 25,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-16",
+    "fund": 2,
+    "nav": "0.2663"
+  }
+},
+{
+  "pk": 26,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-15",
+    "fund": 2,
+    "nav": "0.2668"
+  }
+},
+{
+  "pk": 27,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-14",
+    "fund": 2,
+    "nav": "0.2649"
+  }
+},
+{
+  "pk": 28,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-13",
+    "fund": 2,
+    "nav": "0.2643"
+  }
+},
+{
+  "pk": 29,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-10",
+    "fund": 2,
+    "nav": "0.2642"
+  }
+},
+{
+  "pk": 30,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-09",
+    "fund": 2,
+    "nav": "0.2647"
+  }
+},
+{
+  "pk": 31,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-08",
+    "fund": 2,
+    "nav": "0.2637"
+  }
+},
+{
+  "pk": 32,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-07",
+    "fund": 2,
+    "nav": "0.2633"
+  }
+},
+{
+  "pk": 33,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-06",
+    "fund": 2,
+    "nav": "0.2618"
+  }
+},
+{
+  "pk": 34,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-03",
+    "fund": 2,
+    "nav": "0.2619"
+  }
+},
+{
+  "pk": 35,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-02",
+    "fund": 2,
+    "nav": "0.2631"
+  }
+},
+{
+  "pk": 36,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-30",
+    "fund": 2,
+    "nav": "0.263"
+  }
+},
+{
+  "pk": 37,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-29",
+    "fund": 2,
+    "nav": "0.2603"
+  }
+},
+{
+  "pk": 38,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-26",
+    "fund": 2,
+    "nav": "0.2597"
+  }
+},
+{
+  "pk": 39,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-25",
+    "fund": 2,
+    "nav": "0.2596"
+  }
+},
+{
+  "pk": 40,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-24",
+    "fund": 2,
+    "nav": "0.2582"
+  }
+},
+{
+  "pk": 41,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-23",
+    "fund": 3,
+    "nav": "1.042"
+  }
+},
+{
+  "pk": 42,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-22",
+    "fund": 3,
+    "nav": "1.042"
+  }
+},
+{
+  "pk": 43,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-21",
+    "fund": 3,
+    "nav": "1.0419"
+  }
+},
+{
+  "pk": 44,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-20",
+    "fund": 3,
+    "nav": "1.0418"
+  }
+},
+{
+  "pk": 45,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-17",
+    "fund": 3,
+    "nav": "1.0415"
+  }
+},
+{
+  "pk": 46,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-16",
+    "fund": 3,
+    "nav": "1.0412"
+  }
+},
+{
+  "pk": 47,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-15",
+    "fund": 3,
+    "nav": "1.0409"
+  }
+},
+{
+  "pk": 48,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-14",
+    "fund": 3,
+    "nav": "1.0406"
+  }
+},
+{
+  "pk": 49,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-13",
+    "fund": 3,
+    "nav": "1.0404"
+  }
+},
+{
+  "pk": 50,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-10",
+    "fund": 3,
+    "nav": "1.04"
+  }
+},
+{
+  "pk": 51,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-09",
+    "fund": 3,
+    "nav": "1.0398"
+  }
+},
+{
+  "pk": 52,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-08",
+    "fund": 3,
+    "nav": "1.0396"
+  }
+},
+{
+  "pk": 53,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-07",
+    "fund": 3,
+    "nav": "1.0394"
+  }
+},
+{
+  "pk": 54,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-06",
+    "fund": 3,
+    "nav": "1.0392"
+  }
+},
+{
+  "pk": 55,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-03",
+    "fund": 3,
+    "nav": "1.0388"
+  }
+},
+{
+  "pk": 56,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-02",
+    "fund": 3,
+    "nav": "1.0386"
+  }
+},
+{
+  "pk": 57,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-30",
+    "fund": 3,
+    "nav": "1.0383"
+  }
+},
+{
+  "pk": 58,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-29",
+    "fund": 3,
+    "nav": "1.0381"
+  }
+},
+{
+  "pk": 59,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-26",
+    "fund": 3,
+    "nav": "1.0378"
+  }
+},
+{
+  "pk": 60,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-25",
+    "fund": 3,
+    "nav": "1.0377"
+  }
+},
+{
+  "pk": 61,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-23",
+    "fund": 4,
+    "nav": "0.9543"
+  }
+},
+{
+  "pk": 62,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-22",
+    "fund": 4,
+    "nav": "0.9615"
+  }
+},
+{
+  "pk": 63,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-21",
+    "fund": 4,
+    "nav": "0.9643"
+  }
+},
+{
+  "pk": 64,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-20",
+    "fund": 4,
+    "nav": "0.9582"
+  }
+},
+{
+  "pk": 65,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-17",
+    "fund": 4,
+    "nav": "0.9568"
+  }
+},
+{
+  "pk": 66,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-16",
+    "fund": 4,
+    "nav": "0.9536"
+  }
+},
+{
+  "pk": 67,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-15",
+    "fund": 4,
+    "nav": "0.9586"
+  }
+},
+{
+  "pk": 68,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-14",
+    "fund": 4,
+    "nav": "0.9531"
+  }
+},
+{
+  "pk": 69,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-13",
+    "fund": 4,
+    "nav": "0.9513"
+  }
+},
+{
+  "pk": 70,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-10",
+    "fund": 4,
+    "nav": "0.9462"
+  }
+},
+{
+  "pk": 71,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-09",
+    "fund": 4,
+    "nav": "0.9407"
+  }
+},
+{
+  "pk": 72,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-08",
+    "fund": 4,
+    "nav": "0.9375"
+  }
+},
+{
+  "pk": 73,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-07",
+    "fund": 4,
+    "nav": "0.9385"
+  }
+},
+{
+  "pk": 74,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-06",
+    "fund": 4,
+    "nav": "0.9274"
+  }
+},
+{
+  "pk": 75,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-03",
+    "fund": 4,
+    "nav": "0.912"
+  }
+},
+{
+  "pk": 76,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-02",
+    "fund": 4,
+    "nav": "0.917"
+  }
+},
+{
+  "pk": 77,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-30",
+    "fund": 4,
+    "nav": "0.9195"
+  }
+},
+{
+  "pk": 78,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-29",
+    "fund": 4,
+    "nav": "0.915"
+  }
+},
+{
+  "pk": 79,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-26",
+    "fund": 4,
+    "nav": "0.9146"
+  }
+},
+{
+  "pk": 80,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-25",
+    "fund": 4,
+    "nav": "0.9143"
+  }
+},
+{
+  "pk": 81,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-23",
+    "fund": 5,
+    "nav": "0.7303"
+  }
+},
+{
+  "pk": 82,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-22",
+    "fund": 5,
+    "nav": "0.7351"
+  }
+},
+{
+  "pk": 83,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-21",
+    "fund": 5,
+    "nav": "0.7371"
+  }
+},
+{
+  "pk": 84,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-20",
+    "fund": 5,
+    "nav": "0.7325"
+  }
+},
+{
+  "pk": 85,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-17",
+    "fund": 5,
+    "nav": "0.7283"
+  }
+},
+{
+  "pk": 86,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-16",
+    "fund": 5,
+    "nav": "0.7275"
+  }
+},
+{
+  "pk": 87,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-15",
+    "fund": 5,
+    "nav": "0.733"
+  }
+},
+{
+  "pk": 88,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-14",
+    "fund": 5,
+    "nav": "0.7338"
+  }
+},
+{
+  "pk": 89,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-13",
+    "fund": 5,
+    "nav": "0.7336"
+  }
+},
+{
+  "pk": 90,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-10",
+    "fund": 5,
+    "nav": "0.7264"
+  }
+},
+{
+  "pk": 91,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-09",
+    "fund": 5,
+    "nav": "0.7236"
+  }
+},
+{
+  "pk": 92,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-08",
+    "fund": 5,
+    "nav": "0.7242"
+  }
+},
+{
+  "pk": 93,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-07",
+    "fund": 5,
+    "nav": "0.7252"
+  }
+},
+{
+  "pk": 94,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-06",
+    "fund": 5,
+    "nav": "0.7145"
+  }
+},
+{
+  "pk": 95,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-03",
+    "fund": 5,
+    "nav": "0.6931"
+  }
+},
+{
+  "pk": 96,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-05-02",
+    "fund": 5,
+    "nav": "0.6987"
+  }
+},
+{
+  "pk": 97,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-30",
+    "fund": 5,
+    "nav": "0.7004"
+  }
+},
+{
+  "pk": 98,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-29",
+    "fund": 5,
+    "nav": "0.6978"
+  }
+},
+{
+  "pk": 99,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-26",
+    "fund": 5,
+    "nav": "0.6993"
+  }
+},
+{
+  "pk": 100,
+  "model": "fundtracking.price",
+  "fields": {
+    "date": "2013-04-25",
+    "fund": 5,
+    "nav": "0.6974"
+  }
+}
+]

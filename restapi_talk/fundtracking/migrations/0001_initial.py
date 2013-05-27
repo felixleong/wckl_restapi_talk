@@ -19,7 +19,7 @@ class Migration(SchemaMigration):
         db.create_table(u'fundtracking_fund', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('fund_house', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['fundtracking.FundHouse'])),
-            ('code', self.gf('django.db.models.fields.CharField')(max_length=20)),
+            ('code', self.gf('django.db.models.fields.CharField')(unique=True, max_length=20)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=200)),
         ))
         db.send_create_signal(u'fundtracking', ['Fund'])
@@ -69,7 +69,7 @@ class Migration(SchemaMigration):
         },
         u'fundtracking.fund': {
             'Meta': {'object_name': 'Fund'},
-            'code': ('django.db.models.fields.CharField', [], {'max_length': '20'}),
+            'code': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '20'}),
             'fund_house': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['fundtracking.FundHouse']"}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '200'})
