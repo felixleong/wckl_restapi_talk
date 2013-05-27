@@ -4,17 +4,46 @@ Rest API 101 - Webcamp KL, May 2013 Code Demo
 Installation
 ------------
 
-1. Create a virtualenv instance
+1. Create a virtualenv instance.
+
+   .. note::
+
+        All commands below are prepended with an expected bash prompt.
+        
+        * "$" indicates a normal bash prompt, virtualenv is not activated
+        * "(.env)$" indicates a bash prompt with virtualenv activated
 
    .. code-block:: bash
 
-   virtualenv .env
+        $ virtualenv .env
+        $ source .env/bin/activate
+        (.env)$
 
-2. Install the required packages
+2. Install the required packages.
 
    .. code-block:: bash
 
-   pip install -r requirements.txt
+        (.env)$ pip install -r requirements.txt
+
+3. Create the local settings file and configure it to your liking.
+
+   .. code-block:: bash
+
+        (.env)$ cp restapi_talk/settings/local.example.py restapi_talk/settings/local.py
+        (.env)$ vim restapi_talk/settings/local.py
+
+4. Generate the database file. Follow any on-screen instructions that is shown.
+
+   .. code-block:: bash
+
+        (.env)$ ./manage.py syncdb && ./manage.py migrate
+
+5. If needed, you can load up some sample data to get you started:
+
+
+   .. code-block:: bash
+
+        (.env)$ ./manage.py loaddata restapi_talk/fundtracking/ixtures/sample_data.json
 
 Demo
 ----
