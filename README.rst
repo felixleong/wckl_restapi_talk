@@ -55,13 +55,13 @@ code samples of accessing the API, here's what you'd need to do:
 
    .. code-block:: bash
 
-   python manage.py runserver
+        python manage.py runserver
 
 2. Start the iPython Notebook server
 
    .. code-block:: bash
 
-   ipython notebok
+        ipython notebok --pprint
 
 3. If the iPython Notebook web interface is not loaded on your default web
    browser, you can access it by visiting http://localhost:8888/
