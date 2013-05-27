@@ -1,0 +1,6 @@
+*.sqlite3
+*.pyc
+
+/restapi_talk/settings/local.py
+/media
+/static
