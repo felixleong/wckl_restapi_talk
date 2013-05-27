@@ -7,6 +7,13 @@
   }
 },
 {
+  "pk": 2,
+  "model": "fundtracking.fundhouse",
+  "fields": {
+    "name": "Amanah Mutual Berhad"
+  }
+},
+{
   "pk": 1,
   "model": "fundtracking.fund",
   "fields": {
@@ -49,6 +56,24 @@
     "code": "PIX",
     "name": "Public Index Fund",
     "fund_house": 1
+  }
+},
+{
+  "pk": 6,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "AMBUT",
+    "name": "AMB Unit Trust",
+    "fund_house": 2
+  }
+},
+{
+  "pk": 7,
+  "model": "fundtracking.fund",
+  "fields": {
+    "code": "AMBBT",
+    "name": "AMB Balanced Trust",
+    "fund_house": 2
   }
 },
 {
