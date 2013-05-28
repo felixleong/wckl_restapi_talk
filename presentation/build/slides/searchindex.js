@@ -1,0 +1,1 @@
+Search.setIndex({envversion:42,terms:{webcamp:0,http:0,bullet:0,list:0,some:0,hui:0,here:0,rpenalozan:0,www:0,photo:0,mai:0,emphasi:0,text:0,flickr:0,com:0,leong:0,seh:0},objtypes:{},objnames:{},filenames:["index","background"],titles:["REST(ful) API 101","&lt;no title&gt;"],objects:{},titleterms:{titl:1,slide:0,rest:0,second:0,api:0,ful:0,first:0}})
