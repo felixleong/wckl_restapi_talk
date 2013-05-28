@@ -1,0 +1,13 @@
+Django==1.5.1
+South==0.8.1
+django-extensions==1.1.1
+-e git+https://github.com/toastdriven/django-tastypie.git@ad5128a4f72b7b6ab9bf04e3f13d1bb6b97b32d7#egg=django_tastypie-dev
+django-tastypie-extendedmodelresource==0.22
+ipython==0.13.2
+mimeparse==0.1.3
+python-dateutil==2.1
+pyzmq==13.1.0
+requests==1.2.3
+six==1.3.0
+tornado==3.0.1
+wsgiref==0.1.2
