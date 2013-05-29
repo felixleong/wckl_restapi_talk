@@ -246,8 +246,17 @@ References
 ==========
 
 - REST in Practice, *by Jim, Savas and Ian* (O'Reilly)
+    - http://shop.oreilly.com/product/9780596805838.do
 - RESTful Web Services Cookbook, *by Subbu Allamaraju* (O'Reilly)
+    - http://shop.oreilly.com/product/9780596801694.do
     - Companion website: http://restcookbook.com/
+
+License
+=======
+
+This work is licensed under a `Creative Commons Attribution-ShareAlike 3.0 Unported License`_.
+
+.. _Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
 
 .. DEFINITIONS
 

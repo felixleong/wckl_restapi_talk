@@ -68,3 +68,38 @@ code samples of accessing the API, here's what you'd need to do:
 
 4. Access the "REST API Demo" notebook and you can execute all codes that are
    listed there by selecting the cell and click on the "Run Cell" button.
+
+Presentation
+------------
+
+The presentation slides are available at presentation/build/slides/index.html.
+You can also `read the slide deck in one page`_.
+
+If you want to adapt the content, you can follow the steps below:
+
+1. Install the requirements for documentation generation:
+
+   .. code-block:: bash
+
+        (.env)$ pip install -r requirements.docs.txt
+
+2. Edit presentation/source/index.rst, it's a `ReStructured Text`_ document.
+
+3. Once you make the edits, you can generate the new slide show with the
+   following command.
+
+   .. code-block:: bash
+
+        (.env)$ cd presentation
+        (.env)$ make slides
+
+License
+-------
+
+This work is licensed under a `Creative Commons Attribution-ShareAlike 3.0 Unported License`_.
+
+.. _Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+
+.. _read the slide deck in one page: https://github.com/felixleong/wckl_restapi_talk/blob/master/presentation/source/index.rst
+.. _ReStructured Text: http://docutils.sourceforge.net/rst.html
