@@ -12,7 +12,7 @@ class FundHouse(models.Model):
 
 class Fund(models.Model):
     fund_house = models.ForeignKey(FundHouse)
-    code = models.CharField(max_length=20)
+    code = models.CharField(max_length=20, unique=True)
     name = models.CharField(max_length=200)
 
     def __unicode__(self):
