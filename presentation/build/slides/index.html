@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>REST(ful) API 101 &mdash; REST(ful) API 101 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    <link rel="top" title="REST(ful) API 101 1.0 documentation" href="#" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  <article class="slide level-1" id="rest-ful-api-101">
+<h1>REST(ful) API 101</h1>
+<p>Seh Hui, Leong <br/> May 2013, Webcamp KL</p>
+<div class="figure">
+<img alt="_images/5840311104_3ea1f9bbc3_b.jpg" class="fill" src="_images/5840311104_3ea1f9bbc3_b.jpg" />
+<p class="caption">CC-BY-NC-SA <a class="reference external" href="http://www.flickr.com/photos/rpenalozan/5840311104/">http://www.flickr.com/photos/rpenalozan/5840311104/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="data-data-everywhere">
+<h2>Data, Data Everywhere!</h2>
+<div class="figure">
+<img alt="_images/8464661409_32aa7a26a6_b.jpg" class="fill" src="_images/8464661409_32aa7a26a6_b.jpg" />
+<p class="caption">CC-BY-SA <a class="reference external" href="http://www.flickr.com/photos/frauhoelle/8464661409/">http://www.flickr.com/photos/frauhoelle/8464661409/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="restful-is-awesome">
+<h2>RESTful is AWESOME!</h2>
+<div class="figure">
+<img alt="_images/4960389917_1d0b48f117_b.jpg" class="fill" src="_images/4960389917_1d0b48f117_b.jpg" />
+<p class="caption">CC <a class="reference external" href="http://www.flickr.com/photos/mccun934/4960389917/">http://www.flickr.com/photos/mccun934/4960389917/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="rest-what">
+<h2>REST-what?</h2>
+<ul>
+<li><p class="first">REpresentational State Transfer</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Paradigm/Infrastructure pattern to designing easy-to-understand APIs</strong></dt>
+<dd><ul class="first last simple">
+<li>Both machine- and <strong>programmer-readable</strong> without convoluted protocols</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Usually called <strong>RESTful</strong> because no one seems to agree what a perfect REST service is</p>
+</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="making-the-perfect-bread-and-bacon">
+<h2>Making the Perfect Bread and Bacon</h2>
+<ul class="simple">
+<li>Thinking in <strong>resources</strong></li>
+<li><strong>Uniform Resource Identifier/Locator (URI/URL)</strong></li>
+<li><strong>HTTP</strong>: The perfect <strong>uniform interface</strong></li>
+</ul>
+
+</article>
+<article class="slide level-2" id="http-the-perfect-fit-i">
+<h2>HTTP: The Perfect Fit (I)</h2>
+<p>You can represent CRUD actions using <strong>HTTP verbs</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><strong>Create</strong>:</th><td class="field-body">POST</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><strong>Retrieve</strong>:</th><td class="field-body">GET</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><strong>Update</strong>:</th><td class="field-body">UPDATE</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><strong>Delete</strong>:</th><td class="field-body">DELETE</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="http-the-perfect-fit-ii">
+<h2>HTTP: The Perfect Fit (II)</h2>
+<p>You can get status of your requests using <strong>HTTP status codes</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+</tr>
+<tr class="row-odd"><td>201</td>
+<td>Created</td>
+</tr>
+<tr class="row-even"><td>204</td>
+<td>No-Content (i.e. return void)</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad Request</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+</tr>
+<tr class="row-odd"><td>403</td>
+<td>Forbidden</td>
+</tr>
+<tr class="row-even"><td>404</td>
+<td>Not Found</td>
+</tr>
+<tr class="row-odd"><td>500</td>
+<td>Internal Server Error (OMG BUG!)</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="http-the-perfect-fit-iii">
+<h2>HTTP: The Perfect Fit (III)</h2>
+<p>You can use <strong>HTTP headers</strong> to specify operating parameters of a transaction.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Request header</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Accept</td>
+<td>Content we want to request</td>
+</tr>
+<tr class="row-odd"><td>Authorization</td>
+<td>Authentication credentials</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response header</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Status</td>
+<td>Status of the transaction</td>
+</tr>
+<tr class="row-odd"><td>Location</td>
+<td>The destination URI (important for redirects)</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="http-it-s-awesome">
+<h2>HTTP: It's AWESOME!</h2>
+<div class="figure">
+<img alt="_images/2226367161_bf288a00c9_b.jpg" class="fill" src="_images/2226367161_bf288a00c9_b.jpg" />
+<p class="caption">CC-BY-NC-ND <a class="reference external" href="http://www.flickr.com/photos/frauhoelle/8464661409/">http://www.flickr.com/photos/frauhoelle/8464661409/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="demo-rest-in-action">
+<h2>[DEMO] REST in Action</h2>
+<div class="figure">
+<img alt="_images/3541396771_551b4a34ce_b.jpg" class="fill" src="_images/3541396771_551b4a34ce_b.jpg" />
+<p class="caption">CC-BY <a class="reference external" href="http://www.flickr.com/photos/cabfablab/3541396771/">http://www.flickr.com/photos/cabfablab/3541396771/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="let-s-get-complex">
+<h2>Let's Get Complex</h2>
+<div class="figure">
+<img alt="_images/4008887_2456af3345_o.jpg" class="fill" src="_images/4008887_2456af3345_o.jpg" />
+<p class="caption">CC-SA <a class="reference external" href="http://www.flickr.com/photos/hive/4008887/">http://www.flickr.com/photos/hive/4008887/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="checkout-example-1">
+<h2>Checkout Example (1)</h2>
+<p>Create a new checkout cart</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Request:</th><td class="field-body"><strong>POST</strong> /api/v1/cart/</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Response:</th><td class="field-body">Status: 201 Created <br/>
+Location: /api/v1/cart/12345/</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="checkout-example-2">
+<h2>Checkout Example (2)</h2>
+<p>Add items to cart</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Request:</th><td class="field-body"><p class="first"><strong>POST</strong> /api/v1/cart/12345/item/</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">POST Data:</th><td class="field-body"><div class="code json first highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;item&quot;</span><span class="p">:</span> <span class="s">&quot;/api/v1/product/milk/&quot;</span><span class="p">,</span>
+    <span class="s">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Response:</th><td class="field-body"><p class="first last">Status: 201 Created <br/>
+Location: /api/v1/cart/12345/item/1/</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="checkout-example-3">
+<h2>Checkout Example (3)</h2>
+<p>Check shopping cart contents</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Request:</th><td class="field-body"><p class="first"><strong>GET</strong> /api/v1/cart/12345/</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Response:</th><td class="field-body"><p class="first">Status: 200 OK</p>
+<div class="code json last highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;time_created&quot;</span><span class="p">:</span> <span class="s">&quot;2013-05-22T08:45Z&quot;</span><span class="p">,</span>
+    <span class="s">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s">&quot;product&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="s">&quot;Fresh Milk&quot;</span><span class="p">,</span>
+                <span class="s">&quot;slug&quot;</span><span class="p">:</span> <span class="s">&quot;milk&quot;</span><span class="p">,</span>
+                <span class="s">&quot;price&quot;</span><span class="p">:</span> <span class="mf">5.3</span><span class="p">,</span>
+                <span class="s">&quot;resource_uri&quot;</span><span class="p">:</span> <span class="s">&quot;/api/v1/product/milk/&quot;</span>
+            <span class="p">},</span>
+            <span class="s">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s">&quot;time_added&quot;</span><span class="p">:</span> <span class="s">&quot;2013-05-22T08:52Z&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s">&quot;gross_total&quot;</span><span class="p">:</span> <span class="mf">10.6</span><span class="p">,</span>
+    <span class="s">&quot;currency&quot;</span><span class="p">:</span> <span class="s">&quot;MYR&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="checkout-example-4">
+<h2>Checkout Example (4)</h2>
+<p>Update quantity of item in cart</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Request:</th><td class="field-body"><p class="first"><strong>PUT</strong> /api/v1/cart/12345/item/1/</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">PUT data:</th><td class="field-body"><div class="code json first highlight-python"><div class="highlight"><pre><span class="p">{</span> <span class="s">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">3</span> <span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Response:</th><td class="field-body"><p class="first last">Status: 204 No-Content</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="checkout-example-5">
+<h2>Checkout Example (5)</h2>
+<p>Checkout and make payment <strong>(over-simplified version)</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Request:</th><td class="field-body"><p class="first"><strong>POST</strong> /api/v1/cart/12345/checkout/</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">POST data:</th><td class="field-body"><div class="code json first highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;shipping&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="s">&quot;John Doe&quot;</span><span class="p">,</span>
+        <span class="s">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s">&quot;street&quot;</span><span class="p">:</span> <span class="s">&quot;…&quot;</span> <span class="p">},</span>
+        <span class="s">&quot;phone&quot;</span><span class="p">:</span> <span class="s">&quot;+601222200000&quot;</span>
+    <span class="p">},</span>
+    <span class="s">&quot;payment&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">&quot;type&quot;</span><span class="p">:</span> <span class="s">&quot;CC&quot;</span><span class="p">,</span>
+        <span class="s">&quot;details&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s">&quot;card_number&quot;</span><span class="p">:</span> <span class="s">&quot;…&quot;</span> <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Response:</th><td class="field-body"><p class="first last">Status: 303 See Other <br/>
+Location: /api/v1/order/320/</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="you-are-now-smarter">
+<h2>You Are Now Smarter!</h2>
+<div class="figure">
+<img alt="_images/6966069023_5512204921_b.jpg" class="fill" src="_images/6966069023_5512204921_b.jpg" />
+<p class="caption">CC-BY <a class="reference external" href="http://www.flickr.com/photos/sylvainkalache/6966069023/">http://www.flickr.com/photos/sylvainkalache/6966069023/</a></p>
+</div>
+
+</article>
+<article class="slide level-2" id="you-have-learned">
+<h2>You Have Learned…</h2>
+<ul class="simple">
+<li>We are in the <strong>Data Age</strong></li>
+<li>REST(ful) API and its <strong>components</strong></li>
+<li>Why <strong>HTTP is a godsend</strong></li>
+<li>How do you interact with a <strong>REST(ful) service</strong></li>
+</ul>
+
+</article>
+<article class="slide level-2" id="parting-gift">
+<h2>Parting Gift</h2>
+<p><strong>Code, Demo, Presentation</strong></p>
+<p><a class="reference external" href="http://github.com/felixleong/wckl_restapi_talk/">http://github.com/felixleong/wckl_restapi_talk/</a></p>
+<p><strong>Contact Details</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Email:</th><td class="field-body"><a class="reference external" href="mailto:felixleong&#37;&#52;&#48;gmail&#46;com">felixleong<span>&#64;</span>gmail<span>&#46;</span>com</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Facebook:</th><td class="field-body"><a class="reference external" href="http://facebook.com/leongsh/">http://facebook.com/leongsh/</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Twitter:</th><td class="field-body"><a class="reference external" href="http://twitter.com/felixleong/">http://twitter.com/felixleong/</a></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+<article class="slide level-2" id="references">
+<h2>References</h2>
+<ul>
+<li><dl class="first docutils">
+<dt>REST in Practice, <em>by Jim, Savas and Ian</em> (O'Reilly)</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://shop.oreilly.com/product/9780596805838.do">http://shop.oreilly.com/product/9780596805838.do</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>RESTful Web Services Cookbook, <em>by Subbu Allamaraju</em> (O'Reilly)</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://shop.oreilly.com/product/9780596801694.do">http://shop.oreilly.com/product/9780596801694.do</a></li>
+<li>Companion website: <a class="reference external" href="http://restcookbook.com/">http://restcookbook.com/</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="license">
+<h2>License</h2>
+<p>This work is licensed under a <a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+
+</article>
+
+
+</section>
+  </body>
+</html>

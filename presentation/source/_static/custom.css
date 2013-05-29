@@ -1,0 +1,87 @@
+.slides .caption {
+    color: black;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 0 5px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.slides pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.slides > article {
+    background: #f7e3c0;
+    font-size: 38px;
+    text-shadow: 1px 1px 2px rgba(236, 201, 163, 0.7);
+}
+
+.slides > article.level-1 {
+    padding-right: 0px;
+}
+
+.slides > article.level-1 > h1 {
+    color: #222;
+    background: rgba(255, 255, 255, 0.7);
+
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+
+    font-size: 250%;
+    line-height: 1.5em;
+    letter-spacing: -4px;
+    margin-top: 85px;
+    padding-left: 30px;
+}
+
+.slides > article.level-1 > p {
+    color: #666;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    margin-top: 0px;
+    padding-right: 20px;
+    padding-left: 60px;
+    padding-bottom: 0.5em;
+
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -o-border-bottom-left-radius: 10px;
+}
+
+.slides > article.level-2 > h2 {
+    background: #de9380;
+
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -o-border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+
+    box-shadow:         3px 4px 5px rgba(202, 210, 223, 0.6);
+    -webkit-box-shadow: 3px 4px 5px rgba(202, 210, 223, 0.6);
+    -moz-box-shadow:    3px 4px 5px rgba(202, 210, 223, 0.6);
+
+    color: #fff;
+    line-height: 1.2em;
+    left: -60px;
+    letter-spacing: -2px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.slides > article.level-2 strong {
+    color: #a4b4d6;
+}
+.slides > article.level-2 table {
+    font-size: 65%;
+    line-height: 1.2;
+}
+.slides > article.level-2 th {
+    font-weight: 800;
+}
